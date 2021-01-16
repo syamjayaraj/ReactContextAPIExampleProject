@@ -1,38 +1,34 @@
-.App {
+.library {
+  margin: 5rem;
+}
+.library .books {
+  background: #fefefe;
+  padding: 1rem;
+  display: flex;
+}
+.library .books .book {
+  border: 1px solid rgb(194, 194, 194);
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.favorite {
+  background: rgb(201, 73, 73);
+  color: black;
+  padding: 1rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.not-favorite {
+  background: rgb(219, 208, 208);
+  color: black;
+  padding: 1rem;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.not-favorite:hover {
+  background: rgb(224, 185, 185);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.favorite:hover {
+  background: rgb(150, 44, 44);
 }
